@@ -110,4 +110,4 @@ temp=Table[Plot3D[f[x,p,t],{x,xmin,xmax},{p,pmin,pmax},PlotRange->All],{t,0,tf}]
 
 
 (* ::Input::Initialization:: *)
-Export["thetestt.gif",temp]
+Export["thetestt2.gif",temp]
