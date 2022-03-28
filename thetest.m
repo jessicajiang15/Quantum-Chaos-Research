@@ -102,7 +102,7 @@ calculateEMD[finitnorm_, ffinalnorm_, xmin_, xmax_,ymin_, ymax_, nbox_, gridboxc
 f1[x_,p_]=finitnorm;
 f2[x_,p_]=ffinalnorm;
 Print["hello"];
-Monitor[diffarray=Table[NIntegrate[Re[f[x,p,0.1]-g[x,p,0.1]],{x,xmin+(i-1)*dx,xmin+i*dx},{p,pmin+(j-1)*dy,pmin+j*dy},Method->{"AdaptiveMonteCarlo",MaxPoints->10^7}],{i,1,nbox},{j,1,nbox}],i];
+Monitor[diffarray=Table[NIntegrate[Re[f[x,p,0.1]-g[x,p,0.1]],{x,xmin+(i-1)*dx,xmin+i*dx},{p,pmin+(j-1)*dy,pmin+j*dy}],{i,1,nbox},{j,1,nbox}],i];
 Print["done"];
 outboxes={};inboxes={}; 
 For[i=1,i<=nbox,i++,
