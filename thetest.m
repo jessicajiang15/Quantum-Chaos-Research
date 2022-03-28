@@ -155,6 +155,6 @@ gridboxcutoff=.0001;
 distances=Table[calculateEMD[f[x,p,t], g[x, p, t], xmin, xmax,pmin, pmax, nbox, gridboxcutoff],{t,ti, tf,1}]
 plt=ListPlot[distances]
 Export["plotnbox40.gif",plt]
-Export["numbersnbox40.csv",distances,"CSV"]
+Export["numbersnbox40nomonte.csv",distances,"CSV"]
 
 
