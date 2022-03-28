@@ -150,10 +150,11 @@ Return[distance];
 
 
 (* ::Input::Initialization:: *)
-nbox=20;
+nbox=40;
 gridboxcutoff=.0001;
 distances=Table[calculateEMD[f[x,p,t], g[x, p, t], xmin, xmax,pmin, pmax, nbox, gridboxcutoff],{t,ti, tf,1}]
 plt=ListPlot[distances]
-Export["plot.gif",plt]
+Export["plotnbox40.gif",plt]
+Export["numbersnbox40.csv",distances,"CSV"]
 
 
