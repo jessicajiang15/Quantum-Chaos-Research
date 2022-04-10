@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    101494,       2377]
-NotebookOptionsPosition[     98045,       2305]
-NotebookOutlinePosition[     98383,       2320]
-CellTagsIndexPosition[     98340,       2317]
+NotebookDataLength[    102030,       2393]
+NotebookOptionsPosition[     98581,       2321]
+NotebookOutlinePosition[     98919,       2336]
+CellTagsIndexPosition[     98876,       2333]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -931,8 +931,9 @@ Cell[BoxData[
                     None, Evaluator -> Automatic, Method -> "Preemptive"], 
                     Alignment -> {Center, Center}, ImageSize -> 
                     Dynamic[{
-                    Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
+                    Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
                     GraphicsBox[{{
                     GrayLevel[0.6], 
                     AbsolutePointSize[5], 
@@ -1014,8 +1015,9 @@ q5SZmRFAL++xNeOlE0Dwt3AR
                     None, Evaluator -> Automatic, Method -> "Preemptive"], 
                     Alignment -> {Center, Center}, ImageSize -> 
                     Dynamic[{
-                    Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
+                    Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
                     GraphicsBox[{{
                     GrayLevel[0.6], 
                     AbsolutePointSize[5], 
@@ -1183,8 +1185,9 @@ Cell[BoxData[
                     None, Evaluator -> Automatic, Method -> "Preemptive"], 
                     Alignment -> {Center, Center}, ImageSize -> 
                     Dynamic[{
-                    Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
+                    Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
                     GraphicsBox[{{
                     GrayLevel[0.6], 
                     AbsolutePointSize[5], 
@@ -1266,8 +1269,9 @@ q5SZmRFAL++xNeOlE0Dwt3AR
                     None, Evaluator -> Automatic, Method -> "Preemptive"], 
                     Alignment -> {Center, Center}, ImageSize -> 
                     Dynamic[{
-                    Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
+                    Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
                     GraphicsBox[{{
                     GrayLevel[0.6], 
                     AbsolutePointSize[5], 
@@ -1455,8 +1459,9 @@ Cell[BoxData[
                     None, Evaluator -> Automatic, Method -> "Preemptive"], 
                    Alignment -> {Center, Center}, ImageSize -> 
                    Dynamic[{
-                    Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
+                    Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
                   GraphicsBox[{{
                     GrayLevel[0.6], 
                     AbsolutePointSize[5], 
@@ -1538,8 +1543,9 @@ q5SZmRFAL++xNeOlE0Dwt3AR
                     None, Evaluator -> Automatic, Method -> "Preemptive"], 
                    Alignment -> {Center, Center}, ImageSize -> 
                    Dynamic[{
-                    Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
+                    Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
                   GraphicsBox[{{
                     GrayLevel[0.6], 
                     AbsolutePointSize[5], 
@@ -1694,8 +1700,9 @@ Cell[BoxData[
                     None, Evaluator -> Automatic, Method -> "Preemptive"], 
                    Alignment -> {Center, Center}, ImageSize -> 
                    Dynamic[{
-                    Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
+                    Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
                   GraphicsBox[{{
                     GrayLevel[0.6], 
                     AbsolutePointSize[5], 
@@ -1777,8 +1784,9 @@ q5SZmRFAL++xNeOlE0Dwt3AR
                     None, Evaluator -> Automatic, Method -> "Preemptive"], 
                    Alignment -> {Center, Center}, ImageSize -> 
                    Dynamic[{
-                    Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
+                    Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
                   GraphicsBox[{{
                     GrayLevel[0.6], 
                     AbsolutePointSize[5], 
@@ -1976,7 +1984,12 @@ Cell[BoxData[
                  RowBox[{"(", 
                   RowBox[{"j", "-", "1"}], ")"}], "*", "dy"}]}], ",", 
                RowBox[{"pmin", "+", 
-                RowBox[{"j", "*", "dy"}]}]}], "}"}]}], "]"}], ",", 
+                RowBox[{"j", "*", "dy"}]}]}], "}"}], ",", 
+             RowBox[{"Method", "\[Rule]", 
+              RowBox[{"{", 
+               RowBox[{"\"\<AdaptiveMonteCarlo\>\"", ",", 
+                RowBox[{"MaxPoints", "\[Rule]", 
+                 SuperscriptBox["10", "7"]}]}], "}"}]}]}], "]"}], ",", 
            RowBox[{"{", 
             RowBox[{"i", ",", "1", ",", "nbox"}], "}"}], ",", 
            RowBox[{"{", 
@@ -2261,13 +2274,14 @@ Cell[BoxData[
    3.853501276445092*^9, 3.85350153221847*^9}, {3.853510726225585*^9, 
    3.853510888662326*^9}, {3.8535109541760893`*^9, 3.853511035308571*^9}, {
    3.853792063377346*^9, 3.8537920957648478`*^9}, {3.85500010926915*^9, 
-   3.8550001412299767`*^9}, {3.857479625676399*^9, 
-   3.857479626041923*^9}},ExpressionUUID->"ba96cd45-401e-44fa-a9ee-\
+   3.8550001412299767`*^9}, {3.857479625676399*^9, 3.857479626041923*^9}, {
+   3.85859487264649*^9, 
+   3.858594901519638*^9}},ExpressionUUID->"ba96cd45-401e-44fa-a9ee-\
 111a52ab8123"],
 
 Cell[BoxData[{
  RowBox[{
-  RowBox[{"nbox", "=", "40"}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"nbox", "=", "20"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"gridboxcutoff", "=", ".0001"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{"distances", "=", 
@@ -2287,20 +2301,22 @@ Cell[BoxData[{
  RowBox[{"plt", "=", 
   RowBox[{"ListPlot", "[", "distances", "]"}]}], "\[IndentingNewLine]", 
  RowBox[{"Export", "[", 
-  RowBox[{"\"\<plotnbox40.gif\>\"", ",", "plt"}], 
+  RowBox[{"\"\<plotnbox20reRun.gif\>\"", ",", "plt"}], 
   "]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"Export", "[", 
    RowBox[{
-   "\"\<numbersnbox40nomonte.csv\>\"", ",", "distances", ",", "\"\<CSV\>\""}],
-    "]"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
+   "\"\<numbersnbox20monteRerun.csv\>\"", ",", "distances", ",", 
+    "\"\<CSV\>\""}], "]"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
  InitializationCell->True,
  CellChangeTimes->{{3.857405341540969*^9, 3.857405375377571*^9}, {
   3.8574054094112043`*^9, 3.8574054233911457`*^9}, {3.857405469187252*^9, 
   3.857405469858211*^9}, {3.857412995087183*^9, 3.85741301608533*^9}, {
   3.8574149165896797`*^9, 3.8574149391482887`*^9}, {3.8574149797986937`*^9, 
-  3.857414980909721*^9}, {3.857479725928899*^9, 
-  3.8574797267595453`*^9}},ExpressionUUID->"9cb12736-be0a-432f-85be-\
+  3.857414980909721*^9}, {3.857479725928899*^9, 3.8574797267595453`*^9}, {
+  3.858595018167838*^9, 
+  3.858595043017748*^9}},ExpressionUUID->"9cb12736-be0a-432f-85be-\
 b5fb715d2b04"]
 },
 WindowSize->{808, 747},
@@ -2362,22 +2378,22 @@ Cell[27766, 785, 3687, 97, 258, "Input",ExpressionUUID->"90201517-503d-4a10-b5a8
 Cell[CellGroupData[{
 Cell[31478, 886, 753, 17, 68, "Input",ExpressionUUID->"a7292531-82f3-47eb-a63f-fe101af4e74f",
  InitializationCell->True],
-Cell[32234, 905, 12406, 250, 81, "Output",ExpressionUUID->"6769e1de-aaf2-4913-abcc-6e0d26ab3b47",
+Cell[32234, 905, 12452, 252, 81, "Output",ExpressionUUID->"6769e1de-aaf2-4913-abcc-6e0d26ab3b47",
  InitializationCell->True],
-Cell[44643, 1157, 12423, 250, 81, "Output",ExpressionUUID->"19698231-465b-4ce6-8056-77d744e5ed08",
+Cell[44689, 1159, 12469, 252, 81, "Output",ExpressionUUID->"19698231-465b-4ce6-8056-77d744e5ed08",
  InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[57103, 1412, 748, 21, 68, "Input",ExpressionUUID->"ae60673e-cc7b-40bc-b1c3-2935171e38b6",
+Cell[57195, 1416, 748, 21, 68, "Input",ExpressionUUID->"ae60673e-cc7b-40bc-b1c3-2935171e38b6",
  InitializationCell->True],
-Cell[57854, 1435, 11694, 237, 81, "Output",ExpressionUUID->"27ec43f1-92c1-4dba-8f5e-9ccec960bb34",
+Cell[57946, 1439, 11740, 239, 81, "Output",ExpressionUUID->"27ec43f1-92c1-4dba-8f5e-9ccec960bb34",
  InitializationCell->True],
-Cell[69551, 1674, 11692, 237, 81, "Output",ExpressionUUID->"ddba9f25-ff0d-4062-a8dc-86704d6fdef8",
+Cell[69689, 1680, 11738, 239, 81, "Output",ExpressionUUID->"ddba9f25-ff0d-4062-a8dc-86704d6fdef8",
  InitializationCell->True]
 }, Open  ]],
-Cell[81258, 1914, 15213, 351, 1362, "Input",ExpressionUUID->"ba96cd45-401e-44fa-a9ee-111a52ab8123",
+Cell[81442, 1922, 15504, 357, 1368, "Input",ExpressionUUID->"ba96cd45-401e-44fa-a9ee-111a52ab8123",
  InitializationCell->True],
-Cell[96474, 2267, 1567, 36, 236, "Input",ExpressionUUID->"9cb12736-be0a-432f-85be-b5fb715d2b04",
+Cell[96949, 2281, 1628, 38, 236, "Input",ExpressionUUID->"9cb12736-be0a-432f-85be-b5fb715d2b04",
  InitializationCell->True]
 }
 ]

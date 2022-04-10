@@ -102,7 +102,7 @@ calculateEMD[finitnorm_, ffinalnorm_, xmin_, xmax_,ymin_, ymax_, nbox_, gridboxc
 f1[x_,p_]=finitnorm;
 f2[x_,p_]=ffinalnorm;
 Print["hello"];
-Monitor[diffarray=Table[NIntegrate[Re[f[x,p,0.1]-g[x,p,0.1]],{x,xmin+(i-1)*dx,xmin+i*dx},{p,pmin+(j-1)*dy,pmin+j*dy}],{i,1,nbox},{j,1,nbox}],i];
+Monitor[diffarray=Table[NIntegrate[Re[f[x,p,0.1]-g[x,p,0.1]],{x,xmin+(i-1)*dx,xmin+i*dx},{p,pmin+(j-1)*dy,pmin+j*dy},Method->{"AdaptiveMonteCarlo",MaxPoints->10^7}],{i,1,nbox},{j,1,nbox}],i];
 Print["done"];
 outboxes={};inboxes={}; 
 For[i=1,i<=nbox,i++,
@@ -150,11 +150,11 @@ Return[distance];
 
 
 (* ::Input::Initialization:: *)
-nbox=40;
+nbox=20;
 gridboxcutoff=.0001;
 distances=Table[calculateEMD[f[x,p,t], g[x, p, t], xmin, xmax,pmin, pmax, nbox, gridboxcutoff],{t,ti, tf,1}]
 plt=ListPlot[distances]
-Export["plotnbox40.gif",plt]
-Export["numbersnbox40nomonte.csv",distances,"CSV"]
+Export["plotnbox20reRun.gif",plt]
+Export["numbersnbox20monteRerun.csv",distances,"CSV"]
 
 
