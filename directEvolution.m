@@ -165,9 +165,11 @@ nbox=30;
 gridboxcutoff=.0001;
 thelist=
 Timing[Table[calculateEMD[f, g,t1, xmin, xmax,pmin, pmax, nbox, gridboxcutoff, 8],{t1,ti, tf}]];
-ListPlot[thelist[[2]]]
+plot=ListPlot[thelist[[2]]]
 thelist[[1]]
 
 
 (* ::Input::Initialization:: *)
 ListPlot[thelist[[2]]]
+
+Export["plot921.gif", plot]
