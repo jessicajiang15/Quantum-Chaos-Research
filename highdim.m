@@ -277,5 +277,4 @@ distance=FindMinimumCostFlow[ mat0, Join[supplyamount,demandamount]]
 
 
 (* ::Input::Initialization:: *)
-totaltime=AbsoluteTime[]-begint;
-
+totaltime=AbsoluteTime[]-begint
