@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    285961,       5793]
-NotebookOptionsPosition[    274736,       5562]
-NotebookOutlinePosition[    275129,       5578]
-CellTagsIndexPosition[    275086,       5575]
+NotebookDataLength[    286170,       5800]
+NotebookOptionsPosition[    274943,       5569]
+NotebookOutlinePosition[    275336,       5585]
+CellTagsIndexPosition[    275293,       5582]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -5520,11 +5520,12 @@ Cell[BoxData[
   RowBox[{"(*", 
    RowBox[{"Find", " ", "the", " ", "minimum", " ", "cost", " ", "flow"}], 
    "*)"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
-  RowBox[{"FindMinimumCostFlow", "[", " ", 
-   RowBox[{"mat0", ",", " ", 
-    RowBox[{"Join", "[", 
-     RowBox[{"supplyamount", ",", "demandamount"}], "]"}]}], "]"}]}]], "Input",\
-
+  RowBox[{"distance", "=", 
+   RowBox[{"FindMinimumCostFlow", "[", " ", 
+    RowBox[{"mat0", ",", " ", 
+     RowBox[{"Join", "[", 
+      RowBox[{"supplyamount", ",", "demandamount"}], "]"}]}], 
+    "]"}]}]}]], "Input",
  InitializationCell->True,
  CellChangeTimes->{{3.841479871470343*^9, 3.8414798990173435`*^9}, {
    3.8762622784028587`*^9, 3.8762623497679367`*^9}, {3.876262407259721*^9, 
@@ -5532,9 +5533,10 @@ Cell[BoxData[
    3.876302999420178*^9}, {3.876303041838646*^9, 3.876303057947942*^9}, {
    3.876303192509048*^9, 3.876303195754176*^9}, {3.8763032640470037`*^9, 
    3.876303345178494*^9}, {3.876304469196013*^9, 3.8763044811269207`*^9}, {
-   3.876304640583706*^9, 3.8763046407153883`*^9}, 3.8765854310417347`*^9},
- CellLabel->
-  "In[445]:=",ExpressionUUID->"af01a8e1-9a86-4f77-bf0c-bcef528cc5d2"],
+   3.876304640583706*^9, 3.8763046407153883`*^9}, 3.8765854310417347`*^9, {
+   3.88235403819563*^9, 
+   3.882354039695043*^9}},ExpressionUUID->"af01a8e1-9a86-4f77-bf0c-\
+bcef528cc5d2"],
 
 Cell[BoxData["0.11327307046402173`"], "Output",
  InitializationCell->True,
@@ -5552,10 +5554,15 @@ Cell[BoxData["0.11327307046402173`"], "Output",
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"AbsoluteTime", "[", "]"}], "-", "begint"}]], "Input",
+  RowBox[{
+   RowBox[{"totaltime", "=", 
+    RowBox[{
+     RowBox[{"AbsoluteTime", "[", "]"}], "-", "begint"}]}], ";"}], 
+  "\[IndentingNewLine]"}]], "Input",
  InitializationCell->True,
- CellChangeTimes->{{3.8822738087106047`*^9, 
-  3.882273819514697*^9}},ExpressionUUID->"4e76986a-849c-4ce9-b4b4-\
+ CellChangeTimes->{{3.8822738087106047`*^9, 3.882273819514697*^9}, {
+  3.882354029777781*^9, 
+  3.882354033114147*^9}},ExpressionUUID->"4e76986a-849c-4ce9-b4b4-\
 12f01df55d6c"]
 }, Open  ]]
 }, Open  ]]
@@ -5786,12 +5793,12 @@ Cell[272263, 5505, 426, 7, 34, "Output",ExpressionUUID->"780a74b7-2e34-4d16-a6e2
  InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[272726, 5517, 986, 19, 89, "Input",ExpressionUUID->"af01a8e1-9a86-4f77-bf0c-bcef528cc5d2",
+Cell[272726, 5517, 1050, 21, 89, "Input",ExpressionUUID->"af01a8e1-9a86-4f77-bf0c-bcef528cc5d2",
  InitializationCell->True],
-Cell[273715, 5538, 735, 11, 34, "Output",ExpressionUUID->"b150dfa1-d6be-44d2-8f51-a4e0c56b33dd",
+Cell[273779, 5540, 735, 11, 34, "Output",ExpressionUUID->"b150dfa1-d6be-44d2-8f51-a4e0c56b33dd",
  InitializationCell->True]
 }, Open  ]],
-Cell[274465, 5552, 243, 6, 46, "Input",ExpressionUUID->"4e76986a-849c-4ce9-b4b4-12f01df55d6c",
+Cell[274529, 5554, 386, 11, 68, "Input",ExpressionUUID->"4e76986a-849c-4ce9-b4b4-12f01df55d6c",
  InitializationCell->True]
 }, Open  ]]
 }, Open  ]]
