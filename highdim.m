@@ -1,7 +1,7 @@
 (* ::Package:: *)
 
 (* ::Input::Initialization:: *)
-
+nbox=5;
 begint=AbsoluteTime[]
 
 
@@ -53,7 +53,7 @@ Plot3D[{ffinal[x,y,0,0],finit[x,y,0,0]},{x,-8,8},{y,-5,5},PlotRange->All]
 (* ::Input::Initialization:: *)
 xmin=-4;xmax=4;ymin=-4;ymax=4;zmin=-4;zmax=4;wmin=-4;wmax=4;
 (*running 40 nboxes causes findminimumcostflow to stall. 50 nboxes finishes running.*)
-nbox=5;
+
 
 
 (* ::Input::Initialization:: *)
