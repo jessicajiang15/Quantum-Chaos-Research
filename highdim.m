@@ -1,7 +1,7 @@
 (* ::Package:: *)
 
 (* ::Input::Initialization:: *)
-Unprotect[$ProcessorCount];$ProcessorCount=8;
+Unprotect[$ProcessorCount];$ProcessorCount=12;
 nbox=5;
 begint=AbsoluteTime[]
 
@@ -67,7 +67,7 @@ zmin
 
 
 (* ::Input::Initialization:: *)
-gridboxcutoff=.0001/(nbox^2/20)^2
+gridboxcutoff=.01/nbox^2
 (*scale to nbox
 divide by nbox square*)
 
@@ -132,10 +132,6 @@ diffarray
 
 (* ::Input::Initialization:: *)
 Dimensions[diffarray]
-
-
-(* ::Input::Initialization:: *)
-gridboxcutoff=0.0001
 
 
 (* ::Input::Initialization:: *)
