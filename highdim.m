@@ -1,7 +1,8 @@
 (* ::Package:: *)
 
 (* ::Input::Initialization:: *)
-nbox=5;
+Unprotect[$ProcessorCount];$ProcessorCount=8;
+nbox=4;
 begint=AbsoluteTime[]
 
 
@@ -89,8 +90,8 @@ ffinal[x,y,z,w]
 
 
 (* ::Input::Initialization:: *)
-finitnorm[x_,y_,z_,w_]=finit[x,y,z,w]/NIntegrate[finit[x,y,z,w],{x,xmin,xmax},{y,ymin,ymax},{z,zmin,zmax},{w,wmin,wmax},Method->{"GlobalAdaptive"}];
-ffinalnorm[x_,y_,z_,w_]=ffinal[x,y,z,w]/NIntegrate[ffinal[x,y,z,w],{x,xmin,xmax},{y,ymin,ymax}, {z,zmin,zmax},{w,wmin,wmax},Method->{"GlobalAdaptive"}];
+finitnorm[x_,y_,z_,w_]=finit[x,y,z,w]/Parallelize[NIntegrate[finit[x,y,z,w],{x,xmin,xmax},{y,ymin,ymax},{z,zmin,zmax},{w,wmin,wmax},Method->{"GlobalAdaptive"}]];
+ffinalnorm[x_,y_,z_,w_]=ffinal[x,y,z,w]/Parallelize[NIntegrate[ffinal[x,y,z,w],{x,xmin,xmax},{y,ymin,ymax}, {z,zmin,zmax},{w,wmin,wmax},Method->{"GlobalAdaptive"}]];
 
 
 (* ::Input::Initialization:: *)
@@ -139,6 +140,8 @@ gridboxcutoff=0.0001
 
 (* ::Input::Initialization:: *)
 outboxes={};inboxes={}; supplyamount ={}; demandamount = {};
+
+
 For[i=1,i<=nbox,i++,
 For[j=1,j<=nbox,j++,
 For[k=1,k<=nbox,k++,
@@ -153,9 +156,6 @@ AppendTo[demandamount,diffarray[[i,j,k,l]]]
 ]
 ]
 ]];
-
-
-
 
 
 (* ::Input::Initialization:: *)
