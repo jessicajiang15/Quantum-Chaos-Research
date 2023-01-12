@@ -1,6 +1,7 @@
 (* ::Package:: *)
 
 (* ::Input::Initialization:: *)
+
 begint=AbsoluteTime[]
 
 
@@ -77,10 +78,6 @@ finitnorm[x,y,z,y]
 (* ::Input::Initialization:: *)
 finit[x,y,z,w]
 ffinal[x,y,z,w]
-
-
-(* ::Input::Initialization:: *)
-Method->{"AdaptiveQuasiMonteCarlo",MaxPoints->10^10}
 
 
 (* ::Section::Initialization:: *)
