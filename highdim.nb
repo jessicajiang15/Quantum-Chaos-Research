@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    252611,       4902]
-NotebookOptionsPosition[    242264,       4699]
-NotebookOutlinePosition[    242658,       4715]
-CellTagsIndexPosition[    242615,       4712]
+NotebookDataLength[    253011,       4913]
+NotebookOptionsPosition[    242541,       4708]
+NotebookOutlinePosition[    242935,       4724]
+CellTagsIndexPosition[    242892,       4721]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -4646,6 +4646,15 @@ Cell[BoxData["\<\"mat0.csv\"\>"], "Output",
   "Out[444]=",ExpressionUUID->"780a74b7-2e34-4d16-a6e2-2dac02005eb3"]
 }, Open  ]],
 
+Cell[BoxData[
+ RowBox[{"totaltime1", "=", 
+  RowBox[{
+   RowBox[{"AbsoluteTime", "[", "]"}], "-", "begint"}]}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.882569172494999*^9, 
+  3.882569181639102*^9}},ExpressionUUID->"c26b8c67-113a-441b-a37c-\
+da0c08f35728"],
+
 Cell[CellGroupData[{
 
 Cell[BoxData[
@@ -4894,13 +4903,15 @@ Cell[239164, 4629, 434, 7, 34, "Output",ExpressionUUID->"f7087c80-0d40-4e90-9765
 Cell[239601, 4638, 426, 7, 34, "Output",ExpressionUUID->"780a74b7-2e34-4d16-a6e2-2dac02005eb3",
  InitializationCell->True]
 }, Open  ]],
-Cell[CellGroupData[{
-Cell[240064, 4650, 1050, 21, 89, "Input",ExpressionUUID->"af01a8e1-9a86-4f77-bf0c-bcef528cc5d2",
+Cell[240042, 4648, 274, 7, 46, "Input",ExpressionUUID->"c26b8c67-113a-441b-a37c-da0c08f35728",
  InitializationCell->True],
-Cell[241117, 4673, 735, 11, 34, "Output",ExpressionUUID->"b150dfa1-d6be-44d2-8f51-a4e0c56b33dd",
+Cell[CellGroupData[{
+Cell[240341, 4659, 1050, 21, 89, "Input",ExpressionUUID->"af01a8e1-9a86-4f77-bf0c-bcef528cc5d2",
+ InitializationCell->True],
+Cell[241394, 4682, 735, 11, 34, "Output",ExpressionUUID->"b150dfa1-d6be-44d2-8f51-a4e0c56b33dd",
  InitializationCell->True]
 }, Open  ]],
-Cell[241867, 4687, 369, 8, 46, "Input",ExpressionUUID->"4e76986a-849c-4ce9-b4b4-12f01df55d6c",
+Cell[242144, 4696, 369, 8, 46, "Input",ExpressionUUID->"4e76986a-849c-4ce9-b4b4-12f01df55d6c",
  InitializationCell->True]
 }, Open  ]]
 }, Open  ]]

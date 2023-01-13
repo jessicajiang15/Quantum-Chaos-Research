@@ -264,6 +264,10 @@ Export["mat0.csv",mat0,"CSV"]
 
 
 (* ::Input::Initialization:: *)
+totaltime1=AbsoluteTime[]-begint
+
+
+(* ::Input::Initialization:: *)
 (*Find the minimum cost flow*)
 
 distance=FindMinimumCostFlow[ mat0, Join[supplyamount,demandamount]]
