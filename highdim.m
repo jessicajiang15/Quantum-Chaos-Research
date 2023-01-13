@@ -154,14 +154,6 @@ AppendTo[demandamount,diffarray[[i,j,k,l]]]
 ]];
 
 
-(* ::Input::Initialization:: *)
-diffarray[[1,1,1,1]]
-
-
-(* ::Input::Initialization:: *)
-inboxes
-
-
 (* ::Text::Initialization:: *)
 (*The variables nout and nin are the numbers of boxes from which sand will be moved out or in.*)
 (* Their product, nvars, represents the total number of possible sand movements.*)
@@ -184,18 +176,6 @@ nvars=nout*nin;
 
 (* ::Input::Initialization:: *)
 nout+nin
-
-
-(* ::Input::Initialization:: *)
-
-
-
-(* ::Input::Initialization:: *)
-diffarray
-
-
-(* ::Input::Initialization:: *)
-outboxes
 
 
 (* ::Section::Initialization:: *)
@@ -275,3 +255,4 @@ distance=FindMinimumCostFlow[ mat0, Join[supplyamount,demandamount]]
 
 (* ::Input::Initialization:: *)
 totaltime=AbsoluteTime[]-begint
+totaltime1
