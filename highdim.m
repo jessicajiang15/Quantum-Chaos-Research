@@ -52,7 +52,7 @@ Plot3D[{ffinal[x,y,0,0],finit[x,y,0,0]},{x,-8,8},{y,-5,5},PlotRange->All]
 
 
 (* ::Input::Initialization:: *)
-xmin=-4;xmax=4;ymin=-4;ymax=4;zmin=-4;zmax=4;wmin=-4;wmax=4;
+xmin=-5;xmax=5;ymin=-5;ymax=5;zmin=-5;zmax=5;wmin=-5;wmax=5;
 (*running 40 nboxes causes findminimumcostflow to stall. 50 nboxes finishes running.*)
 
 
@@ -67,7 +67,7 @@ zmin
 
 
 (* ::Input::Initialization:: *)
-gridboxcutoff=.01/nbox^2
+gridboxcutoff=.001/nbox^2
 (*scale to nbox
 divide by nbox square*)
 
@@ -256,3 +256,4 @@ distance=FindMinimumCostFlow[ mat0, Join[supplyamount,demandamount]]
 (* ::Input::Initialization:: *)
 totaltime=AbsoluteTime[]-begint
 totaltime1
+outboxes
